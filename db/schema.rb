@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_21_045643) do
+ActiveRecord::Schema.define(version: 2020_06_21_055133) do
+
+  create_table "themes", force: :cascade do |t|
+    t.string "word"
+    t.string "choice1"
+    t.string "choice2"
+    t.string "choice3"
+    t.string "choice4"
+    t.string "choice5"
+    t.string "choice6"
+    t.string "choice7"
+    t.string "choice8"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
