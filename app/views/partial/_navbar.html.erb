@@ -7,6 +7,7 @@
               <%= link_to "PRETENDER", root_path, class: "nav-link" %>
             </li>
           </ul>
+          <% if user_signed_in? %>
           <ul class="right-actions">
             <li class="nav-item">
               <%= link_to "問題を作成する", "#", class: "btn btn-primary quiz-btn" %>
@@ -15,9 +16,10 @@
               <%= link_to "お題を作成する", "#", class: "btn btn-primary theme-btn" %>
             </li>
             <li class="nav-item">
-              <%= link_to "ログアウト", "#",class: "logout" %>
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout" %>
             </li>
           </ul>
+          <% end %>
         </div>
       </div>
     </nav>
