@@ -80,11 +80,6 @@
   }
 }
 
-// 以下techpitのtwitterより転機、使うところはコメントアウトしつつ使う
-
-/*
-
-
 // devise
 .devise-card {
   max-width: 800px;
@@ -104,7 +99,7 @@
       border: 1px solid #e6ecf0;
     }
     input::placeholder {
-      color: #8E9BA7;
+      color: #8e9ba7;
     }
     .devise-btn {
       border-radius: 100px;
@@ -122,7 +117,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .devise-card{
+  .devise-card {
     .devise-wrapper {
       margin: 10px 60px 0;
     }
@@ -144,6 +139,13 @@
   width: 48px;
   margin-top: 5px;
 }
+
+// 以下techpitのtwitterより転機、使うところはコメントアウトしつつ使う
+
+/*
+
+
+
 
 // tweet
 .card {
