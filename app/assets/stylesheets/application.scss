@@ -46,20 +46,10 @@
       .nav-link {
         padding: 7px;
       }
-      .dropdown-toggle::after {
-        content: none;
-      }
-      .dropdown-menu {
-        .dropdown-item {
-          font-size: 14px;
-          padding: 8px 16px;
-        }
-        .dropdown-divider {
-          margin: 5px 0;
-        }
-      }
+
       .quiz-btn,
-      .theme-btn {
+      .theme-btn,
+      .signup-btn {
         border-radius: 100px;
         margin: 6px;
         padding: 6px 16px;
@@ -68,7 +58,8 @@
         line-height: 20px;
       }
 
-      .logout {
+      .logout,
+      .login {
         display: inline-block;
         margin: 6px;
         padding: 6px 16px;
