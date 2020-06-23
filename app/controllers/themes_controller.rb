@@ -16,6 +16,6 @@ class ThemesController < ApplicationController
 
   private
     def theme_params
-      params.require(:theme).permit(:word, :choice1, :choice2, :choice3, :choice4, :choice5, :choice6, :choice7, :choice8)
+      params.permit(:word, :choice1, :choice2, :choice3, :choice4, :choice5, :choice6, :choice7, :choice8)
     end
 end
