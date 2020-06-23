@@ -1,5 +1,10 @@
 class ThemesController < ApplicationController
-  def def new
+
+  def index
+    @themes = Theme.all.order('created_at DESC')
+  end
+
+  def new
     @theme = Theme.new
   end
 

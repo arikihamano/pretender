@@ -1,0 +1,28 @@
+<div class="theme-card">
+  <% @themes.each do |theme| %>
+    <div class="card">
+      <div class="stream-item">
+        <div class="content">
+          <div class="stream-item-header">
+            <div class="main-content">
+              <h2><%= theme.word %></h2>
+              <ul>
+                <li><%= theme.choice1 %></li>
+                <li><%= theme.choice2 %></li>
+                <li><%= theme.choice3 %></li>
+                <li><%= theme.choice4 %></li>
+                <li><%= theme.choice5 %></li>
+                <li><%= theme.choice6 %></li>
+                <li><%= theme.choice7 %></li>
+                <li><%= theme.choice8 %></li>
+              </ul>
+            </div>
+            <div class="time">
+              ・<%= time_ago_in_words(theme.created_at) %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

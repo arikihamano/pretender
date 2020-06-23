@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'quizzes#index'
 
   get '/themes/new', to: 'themes#new'
+  get '/themes/index', to: 'themes#index'
   post '/themes/new', to: 'themes#create'
 
 end
