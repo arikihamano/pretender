@@ -1,5 +1,5 @@
 class ThemesController < ApplicationController
-  def def new
+  def def(_new)
     @theme = Theme.new
   end
 
@@ -15,7 +15,7 @@ class ThemesController < ApplicationController
   end
 
   private
-    def theme_params
-      params.require(:theme).permit(:word, :choice1, :choice2, :choice3, :choice4, :choice5, :choice6, :choice7, :choice8)
-    end
+  def theme_params
+    params.permit(:word, :choice1, :choice2, :choice3, :choice4, :choice5, :choice6, :choice7, :choice8)
+  end
 end
