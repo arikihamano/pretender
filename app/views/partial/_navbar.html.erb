@@ -14,7 +14,10 @@
               <%= link_to "問題を作成する", "#", class: "btn btn-primary quiz-btn" %>
             </li>
             <li class="nav-item">
-              <%= link_to "お題を作成する", "#", class: "btn btn-primary theme-btn" %>
+              <%= link_to "お題を作成する", new_theme_path, class: "btn btn-primary theme-btn" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "お題一覧を見る", themes_path, class: "btn btn-primary theme-btn" %>
             </li>
             <li class="nav-item">
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout" %>
