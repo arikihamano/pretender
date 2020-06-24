@@ -1,9 +1,4 @@
 class ThemesController < ApplicationController
-
-  def index
-    @themes = Theme.all.order('created_at DESC')
-  end
-
   def new
     @theme = Theme.new
   end
@@ -20,7 +15,7 @@ class ThemesController < ApplicationController
   end
 
   private
-    def theme_params
-      params.permit(:word, :choice1, :choice2, :choice3, :choice4, :choice5, :choice6, :choice7, :choice8)
-    end
+  def theme_params
+    params.permit(:word, :choice1, :choice2, :choice3, :choice4, :choice5, :choice6, :choice7, :choice8)
+  end
 end
