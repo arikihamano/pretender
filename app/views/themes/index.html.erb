@@ -1,24 +1,24 @@
-<div class="theme-card">
+<div class="theme-card card">
+  <div class="card-header">
+    お題一覧
+  </div>
   <% @themes.each do |theme| %>
     <div class="card">
       <div class="stream-item">
         <div class="content">
           <div class="stream-item-header">
             <div class="main-content">
-              <h2><%= theme.word %></h2>
-              <ul>
-                <li><%= theme.choice1 %></li>
-                <li><%= theme.choice2 %></li>
-                <li><%= theme.choice3 %></li>
-                <li><%= theme.choice4 %></li>
-                <li><%= theme.choice5 %></li>
-                <li><%= theme.choice6 %></li>
-                <li><%= theme.choice7 %></li>
-                <li><%= theme.choice8 %></li>
+              <h2 class="word"><%= theme.word %></h2>
+              <ul class="choices">
+                <li><span class="choice">Ａ</span><%= theme.choice1 %></li>
+                <li><span class="choice">Ｂ</span><%= theme.choice2 %></li>
+                <li><span class="choice">Ｃ</span><%= theme.choice3 %></li>
+                <li><span class="choice">Ｄ</span><%= theme.choice4 %></li>
+                <li><span class="choice">Ｅ</span><%= theme.choice5 %></li>
+                <li><span class="choice">Ｆ</span><%= theme.choice6 %></li>
+                <li><span class="choice">Ｇ</span><%= theme.choice7 %></li>
+                <li><span class="choice">Ｈ</span><%= theme.choice8 %></li>
               </ul>
-            </div>
-            <div class="time">
-              ・<%= time_ago_in_words(theme.created_at) %>
             </div>
           </div>
         </div>

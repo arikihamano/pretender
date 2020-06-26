@@ -1,13 +1,26 @@
-<%= form_with model: @theme do |f| %>
-  <%= f.text_field :word, placeholder: "お題は？" %>
-  <%= f.text_field :choice1, placeholder: "１つの目の選択肢" %>
-  <%= f.text_field :choice2, placeholder: "２つの目の選択肢" %>
-  <%= f.text_field :choice3, placeholder: "３つの目の選択肢" %>
-  <%= f.text_field :choice4, placeholder: "４つの目の選択肢" %>
-  <%= f.text_field :choice5, placeholder: "５つの目の選択肢" %>
-  <%= f.text_field :choice6, placeholder: "６つの目の選択肢" %>
-  <%= f.text_field :choice7, placeholder: "７つの目の選択肢" %>
-  <%= f.text_field :choice8, placeholder: "８つの目の選択肢" %>
+<div class="card theme-card">
+  <div class="card-header">
+    お題を作成する
+  </div>
+  <div class="card-body">
+    <%= form_with model: @theme do |f| %>
+      <div class="theme-body">
+        <%= f.text_field :word, placeholder: "お題は？", class: "form-control" %>
+        <%= f.text_field :choice1, placeholder: "１つの目の選択肢", class: "form-control" %>
+        <%= f.text_field :choice2, placeholder: "２つの目の選択肢", class: "form-control" %>
+        <%= f.text_field :choice3, placeholder: "３つの目の選択肢", class: "form-control" %>
+        <%= f.text_field :choice4, placeholder: "４つの目の選択肢", class: "form-control" %>
+        <%= f.text_field :choice5, placeholder: "５つの目の選択肢", class: "form-control" %>
+        <%= f.text_field :choice6, placeholder: "６つの目の選択肢", class: "form-control" %>
+        <%= f.text_field :choice7, placeholder: "７つの目の選択肢", class: "form-control" %>
+        <%= f.text_field :choice8, placeholder: "８つの目の選択肢", class: "form-control" %>
+      </div>
+      <div class="buttons">
+        <%= f.submit "作成", class: "btn btn-primary theme-btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
 
-  <%= f.submit "作成" %>
-<% end %>
+
+
